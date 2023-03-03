@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
     <Link rel="stylesheet" type="text/css" href="../css/style.css">
     <title>Студенты</title>
+    <script async src="../js/popup-a.js">
+    </script>
 </head>
 
 <body class="page">
@@ -39,13 +41,50 @@
         <button href="#" type="submit" class="element-style">Войти</button>
     </header>
     <main class="container">
+        <h1 class="cont-heading">Студенты потока 08.02.2020&nbsp;<span class="emoji">&#128103;&#128102;</span></h1>
+        <div class="students">
+            <section class="student">
+                <img class="students-foto" src="../img/student-man3.svg" alt="Здесь должен быть портрет">
+                <p class="student-name">Василий Иванов</p>
+            </section>
+            <section class="student">
+                <img class="students-foto" src="../img/student-woman.svg" alt="Здесь должен быть портрет">
+                <p class="dev-name">Мария Александрова</p>
+                <span class="new-student">Новичок</span>
+            </section>
+            <section class="student">
+                <img class="students-foto" src="../img/student-woman.svg" alt="Здесь должен быть портрет">
+                <p class="student-name">Мария Александрова</p>
+            </section>
+            <section class="student">
+                <img class="students-foto" src="../img/student-man3.svg" alt="Здесь должен быть портрет">
+                <p class="student-name">Василий Иванов</p>
+            </section>
+            <section class="student">
+                <img class="students-foto" src="../img/student-man3.svg" alt="Здесь должен быть портрет">
+                <p class="student-name">Василий Иванов</p>
+            </section>
+        </div>
+        <div>
 
+        </div>
     </main>
     <footer class="footer">
         <p class="copyright">
             2022 &copy;&nbsp; <a hreff="#" class="innop-Link">учебный центр</a>
         </p>
     </footer>
+    <div class="login-popup">
+        <form class="login-form">
+            <h2 class="login-heading">Войти на сайт</h2>
+            <input class="login-input" name="login" type="text" placeholder="Логин" required>
+            <input class="login-password" name="password" type="password" placeholder="Пароль" required>
+            <button class="popup-button" type="submit">Войти</button>
+            <button type="reset" class="modal-closs-but">
+                <img class="img-closs" src="../img/cross-circle.svg" alt="кнопка закрыть">
+            </button>
+        </form>
+    </div>
 </body>
 
 </html>

@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
     <Link rel="stylesheet" type="text/css" href="../css/style.css">
     <title>Студенты</title>
+    <script async src="../js/popup-a.js">
+    </script>
 </head>
 
 <body class="page">
@@ -39,13 +41,30 @@
         <button href="#" type="submit" class="element-style">Войти</button>
     </header>
     <main class="container">
-
+        <h1 class="style-k">Как нас найти&nbsp;&#128506;&#65039;</h1>
+        <div class="infr-map">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.4778723325112!2d30.312340016633843!3d59.940805681876995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963110ebe9ea5b%3A0x86b0025c5a84a071!2z0JTQstC-0YDRhtC-0LLQsNGPINC_0LsuLCAyLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkwMDAw!5e0!3m2!1sru!2sru!4v1677812032709!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <p class="style-bk">Наши контакты</p>
+        <p class="introduction-ak">Адрес: г. Санкт Петербург, Дворцовая пл., 2, 190000</p>
+        <p class="introduction-tel"><span class="feature">Тел: +7 (812) 555-55-55</span></p>
     </main>
     <footer class="footer">
         <p class="copyright">
             2022 &copy;&nbsp; <a hreff="#" class="innop-Link">учебный центр</a>
         </p>
     </footer>
+    <div class="login-popup">
+        <form class="login-form">
+            <h2 class="login-heading">Войти на сайт</h2>
+            <input class="login-input" name="login" type="text" placeholder="Логин" required>
+            <input class="login-password" name="password" type="password" placeholder="Пароль" required>
+            <button class="popup-button" type="submit">Войти</button>
+            <button type="reset" class="modal-closs-but">
+                <img class="img-closs" src="../img/cross-circle.svg" alt="кнопка закрыть">
+            </button>
+        </form>
+    </div>
 </body>
 
 </html>

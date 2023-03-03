@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
     <Link rel="stylesheet" type="text/css" href="../css/style.css">
     <title>Студенты</title>
+    <script async src="../js/popup-a.js">
+    </script>
 </head>
 
 <body class="page">
@@ -39,13 +41,30 @@
         <button href="#" type="submit" class="element-style">Войти</button>
     </header>
     <main class="container">
-
+        <h1 class="style-a">
+            О курсе&nbsp;&#128241;
+        </h1>
+        <p class="style-v">
+            Посмотрите видео о нас
+        </p>
+        <iframe class="video" src="https://www.youtube.com/embed/0v7pdd4za6s" allowfullscreen></iframe>
     </main>
     <footer class="footer">
         <p class="copyright">
             2022 &copy;&nbsp; <a hreff="#" class="innop-Link">учебный центр</a>
         </p>
     </footer>
+    <div class="login-popup">
+        <form class="login-form">
+            <h2 class="login-heading">Войти на сайт</h2>
+            <input class="login-input" name="login" type="text" placeholder="Логин" required>
+            <input class="login-password" name="password" type="password" placeholder="Пароль" required>
+            <button class="popup-button" type="submit">Войти</button>
+            <button type="reset" class="modal-closs-but">
+                <img class="img-closs" src="../img/cross-circle.svg" alt="кнопка закрыть">
+            </button>
+        </form>
+    </div>
 </body>
 
 </html>
