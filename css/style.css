@@ -10,6 +10,7 @@ html {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
+
 }
 
 /* Header*/
@@ -33,13 +34,12 @@ html {
 }
 
 .logo-s {
-    transition: all 0.2s;
     transition: all 100ms;
     height: 47px;
 }
 
 .logo-s:hover {
-    transition: 1s ease-in-out;
+    transition: 0.5s ease-in-out;
     transform: rotate(-90deg);
     cursor: pointer;
 }
@@ -118,7 +118,7 @@ html {
     min-width: 153px;
     min-height: 50px;
     border: 0;
-    transition: all 1s;
+    transition: all 500ms;
 }
 
 .element-style:hover {
@@ -298,52 +298,6 @@ html {
     margin-bottom: 10px;
 }
 
-.style-bk {
-    display: flex;
-    font-style: normal;
-    font-weight: 400;
-    width: 100%;
-    max-width: 868px;
-    padding: 0 15px;
-    font-size: 25px;
-    margin-top: 15px;
-    margin-bottom: 10px;
-}
-
-.style-v {
-    display: flex;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    margin-top: 0;
-    margin-bottom: 15px;
-}
-
-.style-k {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    font-style: normal;
-    width: 100%;
-    max-width: 868px;
-    height: 35px;
-    padding: 0 15px;
-    font-weight: 700;
-    font-size: 30px;
-    margin-top: 33px;
-    margin-bottom: 25px;
-}
-
-.style-a {
-    display: flex;
-    font-style: normal;
-    height: 35px;
-    font-weight: 700;
-    font-size: 30px; 
-    margin-top: 33px;
-    margin-bottom: 25px;
-}
-
 .introduction {
     max-width: 100%;
     width: 634px;
@@ -371,26 +325,6 @@ html {
     font-size: 18px;
     margin-top: 10px;
     margin-bottom: 15px;
-}
-
-.introduction-ak {
-    display: flex;
-    justify-content: flex-start;
-    max-width: 810px;
-    width: 100%;
-    padding: 0 15px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    margin: 0 0 25px 0;
-}
-
-.introduction-tel {
-    display: flex;
-    justify-content: flex-start;
-    width: 868px;
-    max-width: 100%;
-    padding: 0 15px;
 }
 
 .feature {
@@ -478,6 +412,13 @@ html {
     margin: 37px 0 0;
     width: 100%;
     max-width: 1212px;
+    max-height: 36px;
+    align-items: center;
+    padding-left: 33px;
+}
+
+.emoji {
+    font-size: 25px;
 }
 
 .students {
@@ -495,7 +436,7 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 10px 25px 10px 25px;
+    margin: 0 auto;
     padding: 0;
     max-width: 200px;
     max-height: 270px;
@@ -503,9 +444,11 @@ html {
     position: relative;
 }
 
-.student-name {
-    display: block
-    
+.foto {
+    width: 100%;
+    max-width: 200px;
+    max-height: 270px;
+    object-fit: cover;
 }
 
 .students-foto {
@@ -528,23 +471,163 @@ html {
     border-radius: 20px;
     text-decoration: none;
     position: relative;
-    top: -334px;
+    top: -318px;
     left: 67px;
 }
 
-.dev.name, .student-name {
-    padding: 0 10px;
+.link-name {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+    padding: 4px 10px;
+    margin: 4px 0 10px 0;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.link-name:hover {
+    text-decoration: rgb(255, 255, 255, 1) solid;
+    cursor: pointer;
+    color: rgb(255, 255, 255, 1);
+    background-color: rgba(33, 59, 126, 1);
+    
+}
+
+.dev-name, .student-name {
+    display: block;
+    padding: 8px 0;
+    margin: 0 auto;
+}
+
+/* student-page */
+
+.student-page {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.text-page {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lobster';
+    font-style: normal;
+    color: rgba(100, 100, 100, 1);
+    font-weight: 400;
+    font-size: 25px;
+    width: 100%;
+    max-width: 1100px;
+    height: 100%;
+    max-height: 1360px;
+    margin: 0 auto;
+    padding-left: 15px;
+}
+
+.description2 {
+    justify-content: flex-end;
+}
+
+.foto-card {
+    width: 100%;
+    max-width: 240px;
+    max-height: 350px;
+    object-fit: cover;
+    float: left;
+    margin-right: 30px;
+}
+
+.foto-card2 {
+    width: 100%;
+    max-width: 240px;
+    max-height: 350px;
+    object-fit: cover;
+    margin-right: 15px;
+    float: right;
+}
+
+.page-card {
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.page-card2{
+    padding: 0;
+}
+
+.page-heading {
+    margin: 0 auto;
+    width: 100%;
+    color: rgba(33, 59, 126, 1)
+}
+
+.points {
+    width: 100%;
+    padding: 20px 10px 0 0;
+}
+
+.description {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(../img/bumaga-fon.jpg);
+    max-width: 1200px;
+    height: 100%;
+    max-height: 2440px;
+    margin: 33px 0 0;
+    padding-left: 20px;
 }
 
 /* about_the_course */
 
+.style-a {
+    display: flex;
+    font-style: normal;
+    height: 100%;
+    height: 35px;
+    width: 100%;
+    max-width: 820px;
+    font-weight: 700;
+    font-size: 30px; 
+    margin-top: 33px;
+    margin-bottom: 25px;
+}
+
+.style-v {
+    display: flex;
+    font-style: normal;
+    width: 100%;
+    max-width: 820px;
+    font-weight: 400;
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+    
 .video {
+    display: flex;
+    width: 100%;
+    max-width: 820px;
+    max-height: 540px;
+    height: 100%;
     border: 2px solid rgba(234, 93, 33, 1);
-    width: 820px;
-    height: 540px;
 }
 
 /* contacts */
+
+.style-k {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-style: normal;
+    width: 100%;
+    max-width: 868px;
+    height: 35px;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 33px;
+    margin-bottom: 25px;
+}
 
 .infr-map {
     width: 100%;
@@ -556,8 +639,36 @@ html {
     max-width: 1300px;
     min-height: 370px;
     margin: 0 auto;
-    padding: 0 16px;
     box-sizing: border-box;
+}
+
+.style-bk {
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    width: 100%;
+    max-width: 868px;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.introduction-ak {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 810px;
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0 0 25px 0;
+}
+
+.introduction-tel {
+    display: flex;
+    justify-content: flex-start;
+    width: 868px;
+    max-width: 100%;
 }
 
 /* Footer */
@@ -573,7 +684,7 @@ html {
     height: 100%;
     min-height: 60px;
     background-color: rgba(33, 59, 126, 1);
-    margin: 107px auto 0;
+    margin: 50px auto 0;
     padding: 0;
 }
 
@@ -625,11 +736,6 @@ html {
         align-content: center;
         margin: 0 auto;
     }
-    .cont-heading {
-        justify-content: center;
-        
-    }
-
     .student {
        padding: 0;
        margin: 30px 25px 30px 25px;
@@ -644,9 +750,12 @@ html {
     .gorizont {
         justify-content: center;
     }
+}
+
+@media (max-width: 820px) {
     .video {
-        max-width: 100%;
-    }
+        width: 100%;
+}
 }
 
 @media (max-width: 810px) {
@@ -665,12 +774,13 @@ html {
         justify-content: center;
         text-align: center;
     }
-}
-
-@media (max-width: 665px) {
-    .style-a {
-        width: 100%;
+    .style-a, .style-v, .style-b {
+        flex-wrap: wrap;
+        justify-content: center;
         text-align: center;
+    }
+    .cont-heading {
+        justify-content: center;
     }
 }
 
@@ -686,5 +796,8 @@ html {
     }
     .site-menu {
         flex-direction: column;
+    }
+    .foto-card,.foto-card2 {
+        float: inherit;
     }
 }
